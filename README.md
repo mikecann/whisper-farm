@@ -10,6 +10,8 @@ Demo video and further technical details can be found on my blog post: https://m
 
 ## Development
 
+`bun install`
+
 Make a `.env.local` file in the root of the project, checkout `example.env.local` for the kind of env vars you will need.
 
 In one terminal `bun dev:ts` to dev types (I like to do this in a separate terminal as Webstorm provides clickable links to the errors if I do)

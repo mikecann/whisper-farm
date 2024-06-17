@@ -43,12 +43,6 @@ COPY tsconfig.json .
 # Copy production dependencies and source code into final image
 FROM base AS release
 
-#RUN apt update -q && apt install -y ca-certificates wget \
-#    && wget -qO /cuda-keyring.deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb \
-#    && dpkg -i /cuda-keyring.deb && apt update -q \
-#    && apt install -y --no-install-recommends ffmpeg libcudnn8 libcublas-12-2 \
-#                                              git python3 python3-pip
-
 ARG WORKER_API_KEY
 ENV WORKER_API_KEY=$WORKER_API_KEY
 ARG VITE_CONVEX_URL
